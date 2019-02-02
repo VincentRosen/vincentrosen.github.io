@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+}
+
+header {
+    background-color: #00701a;
+}
+
+.logo {
+    float: left;
+    vertical-align: middle;
+}
+
+.title {
+    color: #000000;
+}
+
+.motto {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+nav {
+    background-color: #43a047;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    padding: 5px;
+}
+
+li:hover {
+    background-color: #76d275;
+}
+
+li:active {
+    background-color: #00701a;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+article {
+    text-align: justify;
+}
