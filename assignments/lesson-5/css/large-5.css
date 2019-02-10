@@ -1,0 +1,34 @@
+@media screen and (min-width: 732px) {
+    body {
+        margin: auto;
+        width: 60%;
+    }
+
+    nav {
+        overflow: hidden;
+    }
+
+    ul {
+        margin: auto;
+        padding: 0;
+        overflow: auto;
+        display: inline-block;
+    }
+
+        .menu-top {
+            display: none;
+        }
+
+        .menu-item {
+            display: inline;
+        }
+        
+        li {
+          float: left;
+        }
+      
+  
+    .five-day-forecast {
+        display: flex;
+    }
+}
