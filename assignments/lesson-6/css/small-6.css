@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+}
+
+header {
+    background-color: #00701a;
+}
+
+#logo {
+    width: 75px;
+    height: 75px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#header-text {
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: middle;
+}
+
+#title {
+    margin: 0px;
+    color: #000000;
+}
+
+#motto {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+nav {
+    background-color: #43a047;
+}
+
+.navigation {
+    padding: 0;
+    list-style-type: none;
+}
+    
+    .navigation li:first-child {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    .responsive li {
+        display: block;
+    }
+
+li {
+    padding: 5px;
+}
+
+li:hover {
+    background-color: #76d275;
+}
+
+li:active {
+    background-color: #00701a;
+}
+
+a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#hero-img {
+    padding: 1%;
+    width: 85%;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.five-day-forecast {
+    display: none;
+    margin: auto;
+    width: 50%;
+    padding: 2%;
+}
+
+.day {
+    flex: 1;
+    height: 5%;
+    width: 5%;
+    background-color: grey;
+}
+
+article {
+    margin: auto;
+    text-align: justify;
+    width: 85%;
+    background-color: #43a047;
+}
+
+footer {
+    margin-top: 3%;
+    background-color: #00701a;
+}
