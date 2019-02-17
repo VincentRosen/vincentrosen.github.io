@@ -37,7 +37,12 @@
         <section>
             <h3>Preston Idaho</h3>
             <div class="container">
-                <img id="hero-img" src="images/hero.jpeg" alt="Horse in fields">
+                <picture>
+                    <source srcset="images/hero-small.jpeg 731w, images/hero-large.jpeg 1200w"
+                            sizes="(max-width: 731px) 85vw, 85vw"
+                            src="images/hero-large.jpeg" alt="A sunny day in the fields of Idaho">
+                </picture>
+                <img id="hero-img" src="images/hero-large.jpeg" alt="Horse in fields">
                 <div class="overlay">
                     <h3>Sunny (80&deg;F)</h3>
                     <img src="images/sun.png" alt="Sun" width="100" height="100">
