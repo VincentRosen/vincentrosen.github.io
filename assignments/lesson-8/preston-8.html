@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Vincent A. Rosen">
+    <meta name="description" content="Local weather for local ranchers and farmers in the Preston, ID area.">
+    
+    <title>Ranchers Forecast | Preston</title>
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-8.css">
+    <link rel="stylesheet" href="css/medium-8.css">
+    <link rel="stylesheet" href="css/large-8.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/logo.png" alt="Logo cow">
+        <div id="header-text">
+            <h1 id="title">Ranchers Forecast</h1>
+            <h2 id="motto">Local Weather for Local Producers</h2>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()"><img class="menu-icon" src="images/hamburger-icon.svg" alt="hamburger-icon">Menu</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h3>Preston Idaho</h3>
+            <div class="container">
+                <img srcset="images/hero-small.jpeg 731w, 
+                             images/hero-large.jpeg 1200w"
+                     sizes="(max-width: 992px) 85vw, 59vw"
+                     src="images/hero-large.jpeg" alt="A sunny day in the fields of Idaho">
+                <div class="overlay">
+                    <h3>Weather Summary</h3>
+                    <h4>Currently: Sunny</h4>
+                    <h4>Average: <span id="average-temp">80</span> &deg;F</h4>
+                    <h4>Wind Chill: <span id=wind-chill></span> &deg;F</h4>
+                    <h4>Humidity: 69&#37;</h4>
+                    <h4>Wind Speed: <span id="wind-speed">5</span> mph</h4>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="five-day-forecast">
+                <div class="day">
+                    <h3>Mon</h3>
+                </div>
+                <div class="day">
+                    <h3>Tue</h3>
+                </div>
+                <div class="day">
+                    <h3>Wed</h3>
+                </div>
+                <div class="day">
+                    <h3>Thu</h3>
+                </div>
+                <div class="day">
+                    <h3>Fri</h3>
+                </div>
+            </div>
+        </section>
+        <article>
+            <h3>Article Title</h3>
+            <h4>By Author</h4>
+            <p>
+                Spicy jalapeno bacon ipsum dolor amet officia hamburger mollit, aliquip jowl ut bacon. 
+                Sausage sirloin ad ham, reprehenderit pork loin biltong ground round. 
+                Ham duis chuck in. Nulla pork loin venison, capicola cupim salami buffalo tri-tip commodo fugiat beef alcatra sunt. 
+                Excepteur ham hock magna, bacon officia ground round pancetta burgdoggen in consectetur chicken turkey in cow minim. 
+                Consectetur incididunt bacon, voluptate cupim boudin ea burgdoggen leberkas flank fugiat pork belly velit aliquip excepteur.
+            </p>
+            <img src="images/logo.png" alt="Logo-Cow" width="75" height="75">
+        </article>
+    </main>
+    <footer>
+        <div class="contact">
+            <h4>Lorem Ipsum 12</h4>
+            <h4>Lorem Ipsum 12</h4>
+            <h4>Lorem Ipsum 12</h4>
+            <h4>Lorem Ipsum 12</h4>
+            <span id="todaysDate"></span>
+        </div>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/currentdate.js"></script>
+</body>
+</html>
