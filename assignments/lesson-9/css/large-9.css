@@ -1,0 +1,53 @@
+@media screen and (min-width: 992px) {
+    body {
+        margin: auto;
+        width: 70%;
+    }
+
+    nav {
+        overflow: hidden;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+        .navigation li:first-child {
+            display: none;
+        }
+
+        .navigation li {
+            display: block;
+            flex: 1 1 auto;
+        }
+        
+        li {
+          float: left;
+        }
+      
+    .five-day-forecast {
+        display: flex;
+    }
+
+    .gallery-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+    }
+
+    .grid-item:hover {
+        box-shadow: 0 0 50px #333333;
+        transition: 0.3s;
+    }
+
+    .town-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+    }
+
+    .town-grid-item:hover {
+        box-shadow: 0 0 50px #333333;
+        transition: 0.3s;
+    }
+}

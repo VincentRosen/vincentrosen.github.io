@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    background-color: #d3d3d3;
+}
+
+header {
+    background-color: #00701a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 75px;
+    height: 75px;
+}
+
+#header-text {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#title {
+    margin: 0;
+    color: #000000;
+}
+
+#motto {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+nav {
+    background-color: #43a047;
+}
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+    
+    .navigation li:first-child {
+        display: block;
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    .responsive li {
+        display: block;
+    }
+
+li {
+    padding: 5px;
+}
+
+li:hover {
+    background-color: #76d275;
+}
+
+li:active {
+    background-color: #00701a;
+}
+
+a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 2% 0 2% 0;
+}
+
+#hero-img {
+    padding: 1%;
+    width: 85%;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 10%;
+    left: 11%;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.five-day-forecast {
+    display: none;
+    margin: auto;
+    width: 50%;
+    padding: 2%;
+}
+
+.day {
+    flex: 1;
+    height: 5%;
+    width: 5%;
+    background-color: grey;
+}
+
+article {
+    margin: auto;
+    text-align: justify;
+    width: 85%;
+    background-color: #43a047;
+}
+
+footer {
+    background-color: #00701a;
+}
+
+.gallery-container {
+    margin: auto;
+    width: 95%;
+    text-align: left;
+}
+
+    .gallery-grid-container {
+        margin-top: 2%;
+        font-style: italic;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+
+        .gallery-grid-container img {
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            width: 100%;
+        }
+
+    .grid-item {
+        border-radius: 25px;
+        border: solid grey 1px;
+    }
+
+    .image-description {
+        padding-left: 5%;
+    }
+
+#storm-center-title {
+    margin: 0 auto;
+    width: 60%;
+    text-align: left;
+}
+
+.storm-form-section {
+    margin: 0 auto;
+    padding: 2%;
+    width: 60%;
+    border: solid 1px #000000;
+}
+
+    .storm-form-section input, label, select, textarea {
+        display: block;
+        width: 100%;
+        resize: none;
+    }
+
+.storm-form-input {
+    margin: 0 auto;
+    text-align: left;
+    width: 80%;
+}
+
+#storm-severity-rating {
+    float: right;
+}
+
+.town-container {
+    margin: auto;
+    width: 95%;
+    text-align: center;
+}
+
+    .town-grid-container {
+        margin-top: 2%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+
+        .town-grid-container img {
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            width: 100%;
+        }
+
+    .town-grid-item {
+        border-radius: 25px;
+        border: solid grey 1px;
+    }
+
+    .townName {
+        color: #00701a;
+    }
+
+    .townMotto {
+        font-style: italic;
+    }

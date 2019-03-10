@@ -1,0 +1,13 @@
+@media screen and (min-width: 732px) {
+    .gallery-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+
+    .town-grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+}
