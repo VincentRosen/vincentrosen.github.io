@@ -1,0 +1,3 @@
+let requestURL='https://byui-cit230.github.io/weather/data/towndata.json';let request=new XMLHttpRequest();request.open('GET',requestURL);request.send();request.onload=function(){let fishhavenData=JSON.parse(request.responseText);for(let i=0;i<fishhavenData.towns.length;i++){if(fishhavenData.towns[i].name=='Fish Haven'){if(fishhavenData.towns[i].events.length>0){for(let j=0;j<fishhavenData.towns[i].events.length;j++){document.getElementById('fish-haven-events').innerHTML+='* '+fishhavenData.towns[i].events[j]+'<br />'}}
+else{document.getElementById('fish-haven-events').innerHTML="Nothing going on right now in Fish Haven..."}
+break}}}

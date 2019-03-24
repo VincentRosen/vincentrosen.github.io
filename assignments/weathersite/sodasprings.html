@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Vincent A. Rosen">
+    <meta name="description" content="Local weather for local ranchers and farmers in the Soda Springs, ID area.">
+    
+    <title>Ranchers Forecast | Soda Springs | Local Weather for Local Ranchers and Farmers | Idaho</title>
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/logo.png" alt="Logo cow">
+        <div id="header-text">
+            <h1 id="title">Ranchers Forecast</h1>
+            <h2 id="motto">Local Weather for Local Producers</h2>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()"><img class="menu-icon" src="images/hamburger-icon.svg" alt="hamburger-icon">Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h3>Soda Springs</h3>
+            <br />
+            <div class="container">
+                <img srcset="images/hero-soda-springs-small.jpg 731w, 
+                             images/hero-soda-springs-large.jpg 1200w"
+                     sizes="(max-width: 992px) 85vw, 59vw"
+                     src="images/hero-soda-springs-large.jpg" alt="A sunny day in the fields of Soda Springs, Idaho">
+                <div class="overlay">
+                    <h3>Weather Summary</h3>
+                    <h4>Currently: <span id="current-weather"></span></h4>
+                    <h4>High: <span id="current-high-temp"></span> &deg;F</h4>
+                    <h4>Wind Chill: <span id=current-wind-chill></span> &deg;F</h4>
+                    <h4>Humidity: <span id="current-humidity"></span>&#37;</h4>
+                    <h4>Wind Speed: <span id="current-wind-speed"></span> mph</h4>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="five-day-forecast">
+                <div class="day">
+                    <div class="five-day-header">
+                        <h3 id="day-one"></h3>
+                    </div>
+                    <div class="five-day-content">
+                        <img id="day-one-weather" src="" alt="">
+                        <h4 id="day-one-temp"></h4>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="five-day-header">
+                        <h3 id="day-two"></h3>
+                    </div>
+                    <div class="five-day-content">
+                        <img id="day-two-weather" src="" alt="">
+                        <h4 id="day-two-temp"></h4>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="five-day-header">
+                        <h3 id="day-three"></h3>
+                    </div>
+                    <div class="five-day-content">
+                        <img id="day-three-weather" src="" alt="">
+                        <h4 id="day-three-temp"></h4>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="five-day-header">
+                        <h3 id="day-four"></h3>
+                    </div>
+                    <div class="five-day-content">
+                        <img id="day-four-weather" src="" alt="">
+                        <h4 id="day-four-temp"></h4>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="five-day-header">
+                        <h3 id="day-five"></h3>
+                    </div>
+                    <div class="five-day-content">
+                        <img id="day-five-weather" src="" alt="">
+                        <h4 id="day-five-temp"></h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <article>
+            <h3>Town Events</h3>
+            <h4>By Admin</h4>
+            <p id="soda-springs-events">
+            </p>
+        </article>
+        <br />
+        <article>
+            <h3>Article Title</h3>
+            <h4>By Curt Cowson - Cow Breeder</h4>
+            <p>
+                Spicy jalapeno bacon ipsum dolor amet officia hamburger mollit, aliquip jowl ut bacon. 
+                Sausage sirloin ad ham, reprehenderit pork loin biltong ground round. 
+                Ham duis chuck in. Nulla pork loin venison, capicola cupim salami buffalo tri-tip commodo fugiat beef alcatra sunt. 
+                Excepteur ham hock magna, bacon officia ground round pancetta burgdoggen in consectetur chicken turkey in cow minim. 
+                Consectetur incididunt bacon, voluptate cupim boudin ea burgdoggen leberkas flank fugiat pork belly velit aliquip excepteur.
+            </p>
+            <img src="images/logo.png" alt="Logo-Cow" width="75" height="75">
+        </article>
+    </main>
+    <footer>
+        <section class="footer-container">    
+            <div class="footer-grid-container">
+                <div class="footer-grid-item">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23471.966899151914!2d-111.60628161759962!3d42.66144307560949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda+Springs%2C+ID+83276%2C+USA!5e0!3m2!1sen!2sse!4v1553380029546" width="300" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="footer-grid-item">
+                    <h4>Weather data provided by: <a href="https://openweathermap.org/">OpenWeatherMap</a></h4>
+                    <br />
+                    <h4>Contact Information</h4>
+                    <h5>Ranchers Forecast</h5>
+                    <h5>P.O. Box 9975 (fictitious)</h5>
+                    <h5>Preston, Idaho</h5>
+                </div>
+            </div>
+            <br />
+            <span id="todaysDate"></span>
+        </section>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentweathersodasprings.js"></script>
+    <script src="scripts/weatherforecastsodasprings.js"></script>
+    <script src="scripts/sodaspringsevents.js"></script>
+    <script src="scripts/currentdate.js"></script>
+</body>
+</html>

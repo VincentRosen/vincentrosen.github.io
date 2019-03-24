@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Vincent A. Rosen">
+    <meta name="description" content="Local weather for local ranchers and farmers in the Idaho area.">
+    
+    <title>Ranchers Forecast | Home | Local Weather for Local Ranchers and Farmers | Idaho</title>
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/logo.png" alt="Logo cow">
+        <div id="header-text">
+            <h1 id="title">Ranchers Forecast</h1>
+            <h2 id="motto">Local Weather for Local Producers</h2>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()"><img class="menu-icon" src="images/hamburger-icon.svg" alt="hamburger-icon">Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="town-container">
+            <h3>Home</h3>
+            <div class="town-grid-container">
+                <div class="town-grid-item" onclick="location.href='preston.html';">
+                    <img src="images/preston.jpg" alt="The town of Preston">
+                    <div id="firstTownInfo">
+                    </div>
+                </div>
+                <div class="town-grid-item" onclick="location.href='sodasprings.html';">
+                    <img src="images/sodasprings.jpg" alt="The town of Soda Springs">
+                    <div id="secondTownInfo">
+                    </div>
+                </div>
+                <div class="town-grid-item" onclick="location.href='fishhaven.html';">
+                    <img src="images/fishhaven.jpg" alt="The town of Fish Haven">
+                    <div id="thirdTownInfo">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-container">    
+            <div class="footer-grid-container">
+                <div class="footer-grid-item">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2864812.4335629274!2d-116.38586296058129!3d45.47648354590207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5358ffa885e499e9%3A0xd06b300515f78758!2sIdaho!5e0!3m2!1sen!2sus!4v1553382834201" width="300" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="footer-grid-item">
+                    <h4>Weather data provided by: <a href="https://openweathermap.org/">OpenWeatherMap</a></h4>
+                    <br />
+                    <h4>Contact Information</h4>
+                    <h5>Ranchers Forecast</h5>
+                    <h5>P.O. Box 9975 (fictitious)</h5>
+                    <h5>Preston, Idaho</h5>
+                </div>
+            </div>
+            <br />
+            <span id="todaysDate"></span>
+        </section>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+</body>
+</html>
