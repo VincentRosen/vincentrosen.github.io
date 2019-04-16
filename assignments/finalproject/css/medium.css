@@ -1,1 +1,1 @@
-@media screen and (min-width:732px){.footer-grid-container{display:grid;grid-template-columns:1fr 1fr;gap:1em}.gallery-grid-container{display:grid;grid-template-columns:1fr 1fr;gap:1em}.town-grid-container{display:grid;grid-template-columns:1fr;gap:1em}}
+@media screen and (min-width:732px){.ad-grid-item img{width:100%;height:90%}.footer-grid-container{display:grid;grid-template-columns:1fr 1fr;gap:1em}}
